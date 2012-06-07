@@ -67,8 +67,7 @@ class m3uReader
             throw new Exception("This file is not a valid M3U!", 1);
 
         array_shift($this->file);
-
-        //i guess this is not a good way, but work. I'm looking for a better way.
+        
         self::filterExtM3U();
     }
 
