@@ -70,8 +70,6 @@ class m3uReader
 
         //i guess this is not a good way, but work. I'm looking for a better way.
         self::filterExtM3U();
-        self::getDir();
-        self::secondsInMinutes();
     }
 
     /**
@@ -132,6 +130,15 @@ class m3uReader
     public function getSeconds()
     {
         return $this->seconds;
+    }
+
+    /**
+    * Return minutes of track.
+    * @return Array
+    */
+    public function getMinutes()
+    {
+        return self::secondsInMinutes();
     }
 
     /**
