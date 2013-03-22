@@ -72,7 +72,7 @@ class m3uReader
     }
 
     /**
-    * Return the '#ExtM3U:' lines without tratmant.
+    * Return the '#ExtM3U:' lines without treatment.
     * @return Array
     */
     public function getExtM3U()
